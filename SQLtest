@@ -83,7 +83,7 @@ GROUP BY DIA
 ORDER BY FLIGHT_COUNT DESC
 LIMIT 1;
 
--- Query to answer fourth question
+-- Query to answer fourth question using the condition >= 2
 SELECT A.NOMBRE_AEROLINEA, V.DIA, COUNT(*) AS MOVEMENT_COUNT
 FROM VUELO V
 JOIN AEROLINEA A ON V.ID_AEROLINEA = A.ID_AEROLINEA
